@@ -1,0 +1,28 @@
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
+    id="fullScreen" width="100%" height="100%" 
+    codebase="http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab"> 
+    ... 
+    <param name="allowFullScreen" value="true" /> 
+    <embed src="GachaLifePCnoFilter.swf" allowFullScreen="true" quality="high" bgcolor="#869ca7" 
+        width="100%" height="100%" name="fullScreen" align="middle" 
+        play="true" 
+        loop="false" 
+        quality="high" 
+        allowScriptAccess="sameDomain" 
+        type="application/x-shockwave-flash" 
+        pluginspage="http://www.adobe.com/go/getflashplayer"> 
+    </embed> 
+    ... 
+</object>
+<script>
+    var fullScreenButton:Button = new Button(); 
+    fullScreenButton.label = "Full Screen"; 
+    addChild(fullScreenButton); 
+    fullScreenButton.addEventListener(MouseEvent.CLICK, fullScreenButtonHandler); 
+ 
+    function fullScreenButtonHandler(event:MouseEvent) 
+    { 
+        stage.displayState = StageDisplayState.FULL_SCREEN;     
+ 
+    }
+</script>
